@@ -41,6 +41,7 @@ def parse_link(url_link, price_class):
 
     dropList.select_by_value('3')
 
+
     # price = driver.find_elements_by_class_name(str(price_class))
     price = WebDriverWait(driver, 5).until(lambda x: x.find_elements_by_class_name(price_class))
     name = WebDriverWait(driver, 5).until(lambda x: x.find_elements_by_class_name('card-title.h5'))

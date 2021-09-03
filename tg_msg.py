@@ -8,6 +8,6 @@ def send_mess(text):
         token = ids[0]
         id = ids[1]
         url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={id}&text={text}&parse_mode=HTML'
-        print(text)
+        # print(text)
         # logging.info(url)
         requests.get(url)
